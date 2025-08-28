@@ -1,30 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zando</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZanDo</title>
+  <link rel="stylesheet" href="/Zando/style.css">
 </head>
 <body>
-    <nav class="navigation">
-        <nav class="menu">
-            <div class="menu-left">
-                <ul>
-                    <li>Women</li>
-                    <li>Men</li>
-                    <li>Boys</li>
-                    <li>Girls</li>
-                </ul>
-            </div>
-            <div class="menu-center">
-                <img src="../Basic/image/Zando.png" alt="">
-            </div>
-            <div class="menu-right">
-                <input type="text" placeholder="🔍 Searching ...">
-                <img src="" alt="">
-            </div>
-        </nav>
-    </nav>
+  <nav class="navigation">
+    <div class="menu">
+      <!-- Left Menu -->
+      <div class="menu-left">
+        <ul class="menulink">
+          <li>
+            <a href="#">Woman</a>
+            <ul class="dropdown">
+              <li><a href="#">All</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Casual</a></li>
+              <li><a href="#">Sportlife</a></li>
+              <li><a href="#">New In Top</a></li>
+              <li><a href="#">New In Dress</a></li>
+              <li><a href="#">New In Bottom</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Man</a>
+            <ul class="dropdown">
+              <li><a href="#">All</a></li>
+              <li><a href="#">Tops</a></li>
+              <li><a href="#">Blazers</a></li>
+              <li><a href="#">Vest</a></li>
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">Jackets</a></li>
+              <li><a href="#">T-Shirts</a></li>
+              <li><a href="#">Hoodies & Sweatshirts</a></li>
+              <li><a href="#">Cardigans</a></li>
+              <li><a href="#">Sportswear</a></li>
+              <li><a href="#">Trousers</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Boy</a>
+            <ul class="dropdown">
+              <li><a href="#">All</a></li>
+              <li><a href="#">Loafers</a></li>
+              <li><a href="#">Sandals</a></li>
+              <li><a href="#">Sneakers</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Girls</a>
+            <ul class="dropdown">
+              <li><a href="#">All</a></li>
+              <li><a href="#">Bows</a></li>
+              <li><a href="#">Bags</a></li>
+              <li><a href="#">Socks</a></li>
+              <li><a href="#">Caps & Hats</a></li>
+              <li><a href="#">Backpacks</a></li>
+              <li><a href="#">Belts</a></li>
+              <li><a href="#">UnderWear</a></li>
+              <li><a href="#">Gloves</a></li>
+              <li><a href="#">Sport Equipment</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Center -->
+      <div class="menu-center">
+        <img src="../Basic/image/Zando.png" alt="Logo" />
+        
+      </div>
+
+      <!-- Right -->
+      <div class="menu-right">
+        <input type="text" placeholder="🔍 Searching ..." />
+        <img src="../Basic/image/bell.png" alt="Bell">
+        <img src="../Basic/image/heart.png" alt="Heart">
+        <img src="../Basic/image/bag.png" alt="Bag">
+        <p><a href="#">LOGIN</a></p>
+        <p><a href="#">REGISTER</a></p>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Image -->
+  <div class="imgcenter">
+    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+    centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+    <swiper-slide>
+        <img src="../Basic/image/50.jpg" alt="50%">
+    </swiper-slide>
+    <swiper-slide>
+        <img src="../Basic/image/80.jpg" alt="80%">
+    </swiper-slide>
+    
+    <div class="autoplay-progress" slot="container-end">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
+  </swiper-container>
+  </div>
+
+  <!-- Bottom Logos -->
+  <div class="imgend">
+    <img src="../Basic/image/Zando.png" alt="">
+    <img src="../Basic/image/Ten11.jpg" alt="">
+    <img src="../Basic/image/Gatoni.jpg" alt="">
+    <img src="../Basic/image/Routine.jpg" alt="">
+    <img src="../Basic/image/361.jpg" alt="">
+    <img src="../Basic/image/Sisburma.jpg" alt="">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <!-- <script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+
+    const swiperEl = document.querySelector("swiper-container");
+    swiperEl.addEventListener("autoplaytimeleft", (e) => {
+      const [swiper, time, progress] = e.detail;
+      progressCircle.style.setProperty("--progress", 1 - progress);
+      progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+    });
+  </script> -->
 </body>
 </html>
